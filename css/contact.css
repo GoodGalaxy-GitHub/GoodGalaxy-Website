@@ -1,0 +1,57 @@
+@import url('global.css');
+#main {
+    display: flex;
+    flex-direction: column;
+    background: var(--global-std-grad);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 5em;
+}
+
+#main h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+#main h2 {
+    margin: 0;
+}
+
+#supportBoxes {
+    display: flex;
+    flex-direction: row;
+    padding: 3em;
+}
+
+.supportBox {
+    flex: 1;
+    color: black;
+    border-radius: .5em;
+    box-shadow: .25em .25em .6em .35em rgba(0, 0, 255, .2);
+    padding: 2em;
+    margin: 1em;
+}
+
+.supportBox h2 {
+    background: var(--global-std-grad);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.supportBox h4 {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+@media only screen and (max-width: 1110px) {
+    #supportBoxes {
+        flex-direction: column;
+        text-align: center;
+    }
+    #main {
+        text-align: center;
+    }
+}

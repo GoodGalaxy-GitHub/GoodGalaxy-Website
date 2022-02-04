@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./css/index.css">
+    <link type="image" rel="shortcut icon" href="./assets/favicon.ico">
+    <title>GoodGalaxy</title>
+</head>
+
+<body>
+    <div id="loading-cont">
+        <div id="loading">
+            <h1>Something's not right...</h1>
+            <h3>It seems like we had some issues while loading scripts. This might be because the connection is slow (if so, this message should go away momentarily), or it could be because your browser is blocking scripts. Try checking your ad-block settings
+                and make sure you have scripts enabled. </h3>
+            <br>
+            <h4>(While we do use Google Analytics, we don't care if you block it. Just make sure our main JS script is unblocked so we can render the site.)</h4>
+        </div>
+    </div>
+    <nav id="nav"></nav>
+    <div id="app-list" class="hidden"></div>
+
+    <div id="hero-cont">
+        <div id="hero">
+            <h1>Projects made by hobbyists just like you.</h1>
+            <h2>GoodGalaxy</h2>
+            <p><span id="scrollToMore" class="material-icons-outlined">
+                    expand_more
+                </span></p>
+        </div>
+    </div>
+    <div id="more-sec">
+        <div id="left-col" class="col-info">
+            <h1>About Us <span class="material-icons-outlined">
+                    help_outline
+                </span>
+                <p>
+            </h1>
+            <p>GoodGalaxy started out as a group of friends looking to bring our love for gaming to another level. We initially wanted GoodGalaxy to be a place for us to host multiplayer servers for PC games, however this soon evolved into a place where
+                we can share projects we make. These projects are almost always open-source, meaning you can look at and edit the inner-workings of almost everything we make. Additionally, we strive to incorporate community feedback into our projects
+                and always try to make things easy and simple to use. So far, we only have the GoodGalaxy Network site which hosts all of our multiplayer servers, however we plan to expand and include many more ideas. So with all of that said, we sincerely
+                thank you for visiting our page and taking the time to read this. <br><br> Sincerely,<br> The GoodGalaxy Team
+            </p>
+        </div>
+
+        <div id="right-col" class="col-info">
+            <h1>Our Projects <span class="material-icons-outlined">
+                    grid_view
+                </span></h1>
+            <p>As of now, we only have the GoodGalaxy Network website and the website of one of our creators, Delish. You can check our both of these pages by clicking the <span class="material-icons-outlined">
+                apps
+            </span> at the top of the page</p>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <!--Scripts necessary for the website to function -->
+    <script src='./js/global-elements.js'></script>
+
+    <script src='./js/index.js'></script>
+
+    <!--Google Analytics-->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-2QHC9SWH2K'></script>
+    <script src='./js/gtag.js'></script>
+
+</body>
+
+</html>

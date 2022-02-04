@@ -1,0 +1,123 @@
+@import url('global.css');
+#hero {
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: var(--global-std-grad);
+    height: 89vh;
+    width: auto;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+#hero h2 {
+    font-size: 2em;
+}
+
+#scrollToMore {
+    margin: 3em;
+    font-size: 2.5em;
+    user-select: none;
+}
+
+#scrollToMore:hover {
+    cursor: pointer;
+}
+
+#more-sec {
+    display: flex;
+    place-content: space-between;
+    padding: 3em;
+}
+
+.col-info {
+    display: block;
+    background: var(--global-std-grad);
+    padding: 3em;
+    margin: 8em 8em 8em 8em;
+    width: 35%;
+    height: auto;
+    color: white;
+    border-radius: 1em;
+}
+
+.col-info h1 {
+    text-align: center;
+}
+
+#left-col {
+    margin-left: 3em;
+    float: left;
+}
+
+#right-col {
+    margin-right: 3em;
+    float: right;
+}
+
+footer {
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-self: center;
+    background: var(--global-std-grad);
+    padding: 2em;
+    color: white;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1300px) {
+    #hero h1 {
+        font-size: 2.5em;
+    }
+    #hero h2 {
+        font-size: 1.5em;
+    }
+    #scrollToMore {
+        margin: 2em;
+        font-size: 2em;
+    }
+    #more-sec {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        font-size: .85em;
+        text-align: center;
+    }
+    #hero {
+        flex-direction: column;
+    }
+    #left-col {
+        margin: 2em;
+        float: unset;
+        width: auto;
+    }
+    #right-col {
+        margin: 2em;
+        float: unset;
+        width: auto
+    }
+    .material-icons-outlined {
+        font-size: .85em;
+    }
+}
+
+@media only screen and (max-height: 860px) {
+    #hero h1 {
+        font-size: 2em;
+    }
+    #hero h2 {
+        font-size: 1em;
+    }
+    #scrollToMore {
+        margin: 2em;
+        font-size: 1.5em;
+    }
+}

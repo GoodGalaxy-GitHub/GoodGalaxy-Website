@@ -1,0 +1,206 @@
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap");
+    @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+     :root {
+        --global-std-grad: linear-gradient(90deg, rgba(255, 5, 148, 1) 0%, rgb(159, 68, 255) 95%);
+    }
+    
+    #loading-cont {
+        background: var(--global-std-grad);
+        z-index: 101;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+    }
+    
+    #loading {
+        color: white;
+        text-align: center;
+        padding: 10em;
+        font-size: 1em;
+    }
+    
+    body {
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+    }
+    
+    a {
+        color: inherit;
+        text-underline-offset: .2em;
+    }
+    
+    nav {
+        background: white;
+        display: flex;
+        flex-direction: row;
+        place-content: space-between;
+        align-items: center;
+        top: 0;
+        position: sticky;
+        padding: 1.5em 3em 1.5em 3em;
+        z-index: 100;
+        box-shadow: .25em .25em .6em .35em rgba(0, 0, 255, .2);
+    }
+    
+    .nav-icons {
+        font-size: 1.25em;
+        background: initial;
+        -webkit-background-clip: initial;
+        background-clip: initial;
+        -webkit-text-fill-color: initial;
+        color: rgb(166, 57, 255);
+        transition: color .5s ease-out;
+        margin: 0em .5em 0em .5em
+    }
+    
+    .nav-icons:hover {
+        cursor: pointer;
+        color: rgb(253, 0, 190);
+    }
+    
+    #navLogo {
+        font-size: 1.25em;
+        background: var(--global-std-grad);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        user-select: none;
+    }
+    
+    #navRight {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .hideApp {
+        display: none;
+        visibility: none;
+        height: 0%
+    }
+    
+    .hidden {
+        visibility: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .displayApp {
+        visibility: visible;
+        display: block;
+        position: fixed;
+        z-index: 100;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        color: black;
+        right: 0;
+        padding: 1em 2em 1em 2em;
+        margin: 1em 3em 1em 5em;
+        border-radius: 1em;
+        box-shadow: .25em .25em .6em .35em rgba(0, 0, 255, .2);
+        user-select: none;
+        transition: all .5s ease;
+    }
+    
+    .displayApp h1 {
+        font-size: 1.25em;
+        background: var(--global-std-grad);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    #app-list-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .appEntry {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5em;
+        font-size: .75em;
+        width: auto;
+        text-overflow: ellipsis;
+    }
+    
+    .appEntry :hover {
+        cursor: pointer;
+    }
+    
+    .appEntry img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--global-std-grad);
+        color: white;
+        padding: 2em;
+        font-weight: 700;
+    }
+    
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        #app-list-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .appEntry img {
+            width: 30px;
+            height: 30px;
+        }
+        .nav-icons {
+            font-size: .85em;
+        }
+        .nav-icons {
+            font-size: 1.5em;
+        }
+        #navLogo {
+            font-size: 1.25em;
+            margin: 0em .5em 0em .5em
+        }
+        #loading {
+            color: white;
+            text-align: center;
+            padding: 5em;
+            font-size: .65em;
+        }
+    }
+    
+    @media only screen and (max-height: 860px) {
+        .appEntry {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: .5em;
+            font-size: .75em;
+            width: auto;
+            text-overflow: ellipsis;
+        }
+    }
